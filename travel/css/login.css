@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Karma:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karma', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e0f7fa; /* xanh biển nhạt */
+}
+
+.login-box {
+    display: flex;
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: #0098a1; /* xanh biển đậm */
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffffff;
+    backdrop-filter: blur(5px);
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-box {
+    width: 310px;
+    margin: 30px 0;
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #ffffff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    margin-right: 1rem;
+}
+
+.remember-forgot a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #0098a1;
+    outline: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #cceff1;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: .9em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.register-link p a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .login-box {
+        width: 90%;
+        height: auto;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .input-box {
+        width: 100%;
+    }
+    button {
+        font-size: 1rem;
+    }
+}

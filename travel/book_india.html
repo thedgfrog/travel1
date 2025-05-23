@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Traveloko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .info img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #fffafa;
+            border-radius: 8px;
+        }
+        .btn {
+            padding: 12px;
+            background: #0098a1;
+            border: none;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .btn:hover {
+            background:#0098a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hawaii Trip Booking</h1>
+        <div class="info">
+            <img src="./img/india.jpg" alt="india">
+            <p>Explore the beauty of Hawaii with our exclusive 15% discount. Crystal-clear waters, warm beaches, and unforgettable memories await you!</p>
+        </div>
+
+        <h2>Book Your Trip</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Full Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="number" placeholder="Number of Guests" min="1" required>
+            <input type="date" placeholder="Arrival Date" required>
+            <input type="date" placeholder="Departure Date" required>
+            <textarea placeholder="Any special requests..." rows="4"></textarea>
+            <input type="submit" class="btn" value="Confirm Booking">
+        </form>
+    </div>
+</body>
+</html>
