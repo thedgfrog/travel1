@@ -3,110 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egypt</title>
+    <title>Booking - Traveloko</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #c6c925, #ffffff);
+            background: linear-gradient(to right, #e7a619, #ffffff);
             padding: 20px;
         }
-
         .container {
             max-width: 800px;
-            background: #fff;
+            background: white;
             margin: 50px auto;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-
         h1, h2 {
             text-align: center;
-            color: #004d40;
+            color: #333;
         }
-
         .info {
             text-align: center;
-            margin: 30px 0;
+            margin-bottom: 30px;
         }
-
         .info img {
             width: 100%;
             max-height: 300px;
             object-fit: cover;
-            border-radius: 12px;
+            border-radius: 10px;
         }
-
-        .info p {
-            margin-top: 15px;
-            font-size: 16px;
-            color: #555;
-        }
-
         form {
             display: grid;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 15px;
         }
-
         input, textarea {
-            padding: 12px 15px;
+            padding: 10px;
             font-size: 16px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            transition: 0.3s;
+            border: 1px solid #fffafa;
+            border-radius: 8px;
         }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: #009688;
-            box-shadow: 0 0 5px rgba(0, 150, 136, 0.2);
-        }
-
         .btn {
-            background: #009688;
-            color: white;
-            border: none;
-            padding: 14px;
-            font-size: 16px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
+            padding: 12px;
             background: #0098a1;
+            border: none;
+            color: #000;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .btn:hover {
+            background:#0098a1;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Egypt Booking</h1>
+        <h1>Egypt Trip Booking</h1>
         <div class="info">
             <img src="./img/egpyt.jpg" alt="egypt">
-            <p>
-                 Ready to uncover ancient wonders?  Book your Egyptian adventure today and enjoy <strong>15% off</strong> on a journey through history. 
-    Stand before the mighty Pyramids of Giza, cruise the Nile River, and explore the timeless secrets of pharaohs and temples. 
-    An unforgettable experience awaits!
-            </p>
+            <p>Discover the timeless allure of Egypt on a journey through ancient wonders and vibrant culture. From the iconic Pyramids of Giza to the bustling bazaars of Cairo, every step reveals a piece of history. Cruise along the majestic Nile River, explore the Valley of the Kings, and marvel at temples carved into stone. Whether you're an adventurer, history lover, or cultural explorer, Egypt promises a once-in-a-lifetime experience.</p>
+            <p>This trip includes guided tours, 4-star accommodations, daily breakfast, and optional desert excursions. Let Traveloko be your guide to uncovering the secrets of the Pharaohs in comfort and style.</p>
         </div>
 
-        <h2>Book Your Trip Now</h2>
+        <h2>Book Your Trip</h2>
         <form action="#">
             <input type="text" placeholder="Your Full Name" required>
-            <input type="email" placeholder="Your Email Address" required>
+            <input type="email" placeholder="Your Email" required>
             <input type="number" placeholder="Number of Guests" min="1" required>
             <input type="date" placeholder="Arrival Date" required>
             <input type="date" placeholder="Departure Date" required>
-            <textarea placeholder="Any special requests?" rows="4"></textarea>
+            <textarea placeholder="Any special requests..." rows="4"></textarea>
             <input type="submit" class="btn" value="Confirm Booking">
         </form>
     </div>
